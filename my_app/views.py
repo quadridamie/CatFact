@@ -4,7 +4,7 @@ from my_app.models import CatFacts
 # Create your views here.
 
 def home(request):
-    import urllib as url_req
+    import urllib2 as url_req
     import json
     response = url_req.urlopen('http://catfacts-api.appspot.com/api/facts')
     response = response.read().decode('utf-8')
